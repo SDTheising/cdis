@@ -5,6 +5,17 @@
    - Light Gray: #eeeeee
    - White: #ffffff
 */
+
+@font-face {
+    font-family: 'Black Ops One';
+    src: url('fonts/BlackOpsOne.woff2') format('woff2'),
+         url('fonts/BlackOpsOne.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+
 html, body {
     overflow-x: hidden;
     overscroll-behavior: none;
@@ -24,7 +35,7 @@ body {
   }
   
   .brand {
-    font-family: 'Black Ops One';
+    font-family: 'Black Ops One', sans-serif;
     color: #ffcc00;
   }
   
