@@ -65,8 +65,15 @@ body {
     font-family: 'Philosopher', sans-serif;
     background-color: #eeeeee;
     color: #2c2b2b;
+    padding: 1rem;
+    font-size: 1rem;
   }
 
+  h1, h2, h3 {
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+  
   .paragraph {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
@@ -220,11 +227,24 @@ body {
       flex-direction: column;
       text-align: center;
     }
+    .container {
+        flex-direction: column;
+    }
   
     nav ul {
       flex-direction: column;
       gap: 0.5rem;
     }
+
+    nav li {
+        padding: 0.5rem 0;
+      }
+      
+      nav a {
+        display: block;
+        padding: 0.5rem 1rem;
+      }
+      
   
     .hero, .quick-links, .container {
       padding: 1rem;
