@@ -227,7 +227,7 @@ body {
       flex-direction: column;
       text-align: center;
     }
-    .container {
+    .flex-container {
         flex-direction: column;
     }
   
