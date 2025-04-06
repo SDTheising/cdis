@@ -35,13 +35,29 @@
       <p><strong>Phone:</strong> (317) 578-2356</p>
       <p><strong>Hours:</strong> Monday - Friday: 8am - 5pm | Saturday - Sunday: Closed</p>
 
-      <form>
-        <input type="text" placeholder="Name" required />
-        <input type="email" placeholder="Email" required />
-        <input type="tel" placeholder="Phone" />
-        <textarea placeholder="Your message" rows="4" required></textarea>
+      <form id="contact-form" action="send-email-private.php" method="POST">
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="tel" name="phone" placeholder="Phone" />
+        <textarea name="message" placeholder="Your message" rows="4" required></textarea>
         <button type="submit">Send Message</button>
-      </form>
+      </form>      
+      <p id="status-message"></p>
+
+        <script>
+        const params = new URLSearchParams(window.location.search);
+        const status = params.get('status');
+        const statusEl = document.getElementById('status-message');
+
+        if (status === 'success') {
+            statusEl.textContent = 'Message sent successfully!';
+            statusEl.style.color = 'green';
+        } else if (status === 'error') {
+            statusEl.textContent = 'There was an error sending your message.';
+            statusEl.style.color = 'red';
+        }
+        </script>
+
     </section>
   </main>
 
