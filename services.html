@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Services - CDIS</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+   
 </head>
 <body>
   <header>
@@ -29,6 +37,7 @@
   </header>
 
   <main class="page">
+    <div class="flex-container">
     <section class="container">
       <h2 class="brand">Our Services</h2>
       <ul>
@@ -47,8 +56,12 @@
         <li>Property Inspection</li>
       </ul>
     </section>
+    </div>
+    <div class ="flex-container">
+        <div id="map"></div>
+    </div>
   </main>
-
+  <script src="js/map.js"></script>
   <footer>
     <div class="footer-content">
       <p><strong>CDIS</strong> | 8418 Hague Road, Indianapolis, IN 46256 | (317) 578-2356</p>

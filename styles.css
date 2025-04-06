@@ -8,8 +8,7 @@
 
 @font-face {
     font-family: 'Black Ops One';
-    src: url('./fonts/BlackOpsOne-Regular.woff2') format('woff2'),
-         url('./fonts/BlackOpsOne-Regular.ttf') format('truetype');
+    src: url('./fonts/BlackOpsOne-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -221,6 +220,12 @@ body {
     margin-right: 15px; 
     float: left;
   }
+
+  #map { 
+    height: 50vh; 
+    width: 75vw;
+    align-content: center;
+}
   
   @media (max-width: 768px) {
     .top-bar {
@@ -249,4 +254,6 @@ body {
     .hero, .quick-links, .container {
       padding: 1rem;
     }
+
+
   }
