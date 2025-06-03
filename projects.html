@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects - CDIS</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="js/content.js"></script>
 </head>
 <body>
   <header>
@@ -29,15 +30,149 @@
   </header>
 
   <main class="page">
-    <section class="container">
+      <section class="quick-links">
+        <div class="flex-container">
+          <button class="card" onclick="showSection('section1')">
+            <h4>[Project1]</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </button>
+          <button class="card" onclick="showSection('section2')">
+            <h4>[Project2]</h4>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </button>
+          <button class="card" onclick="showSection('section3')">
+            <h4>[Project3]</h4>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </button>
+          <button class="card" onclick="showSection('section4')">
+            <h4>[Project4]</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </button>
+          <button class="card" onclick="showSection('section5')">
+            <h4>[Project5]</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </button>
+        </div>
+    </section>
+    <section class = "flex-container">
+      <!-- Content Sections -->
+      <div id="section1" class="content-section gallery hidden">
+        <!-- Content for Section 1 -->
+         <div class = "flex-container">
+          <img src="https://placehold.co/600x400?text=Section+1" alt="Project 1" />
+          <img src="https://placehold.co/600x400?text=Section+1" alt="Project 1" />
+          <img src="https://placehold.co/600x400?text=Section+1" alt="Project 1" />
+         </div>
+
+          <div> 
+          <h2>Lorem ipsum dolor.</h2>
+
+          <hr>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+         </div>
+      </div>
+      <div id="section2" class="content-section gallery hidden">
+        <!-- Content for Section 2 -->
+         <div class = "flex-container">
+          <img src="https://placehold.co/600x400?text=Section+2" alt="Project 2" />
+          <img src="https://placehold.co/600x400?text=Section+2" alt="Project 2" />
+          <img src="https://placehold.co/600x400?text=Section+2" alt="Project 2" />
+         </div>
+         
+          <div> 
+          <h2>Lorem ipsum dolor.</h2>
+
+          <hr>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+         </div>
+      </div>
+      <div id="section3" class="content-section gallery hidden">
+        <!-- Content for Section 3 -->
+         <div class = "flex-container">
+          <img src="https://placehold.co/600x400?text=Section+3" alt="Project 3" />
+          <img src="https://placehold.co/600x400?text=Section+3" alt="Project 3" />
+          <img src="https://placehold.co/600x400?text=Section+3" alt="Project 3" />
+          </div>
+
+          <div> 
+          <h2>Lorem ipsum dolor.</h2>
+
+          <hr>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+         </div>
+      </div>
+      <div id="section4" class="content-section gallery hidden">
+        <!-- Content for Section 4 -->
+         <div class = "flex-container">
+          <img src="https://placehold.co/600x400?text=Section+4" alt="Project 4" />
+          <img src="https://placehold.co/600x400?text=Section+4" alt="Project 4" />
+          <img src="https://placehold.co/600x400?text=Section+4" alt="Project 4" />
+          </div>
+
+          <div> 
+          <h2>Lorem ipsum dolor.</h2>
+
+          <hr>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+         </div>
+      </div>
+      <div id="section5" class="content-section gallery hidden">
+        <!-- Content for Section 5 -->
+         <div class = "flex-container">
+          <img src="https://placehold.co/600x400?text=Section+5" alt="Project 5" />
+          <img src="https://placehold.co/600x400?text=Section+5" alt="Project 5" />
+          <img src="https://placehold.co/600x400?text=Section+5" alt="Project 5" />
+          </div>
+
+
+          <div> 
+          <h2>Lorem ipsum dolor.</h2>
+
+          <hr>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+         </div>
+      </div>
+    </section>
+
+    <section class="container content-section">
       <h2 class="brand">Project Gallery</h2>
       <div class="gallery">
-        <img src="//img1.wsimg.com/isteam/stock/101/:/rs=w:1300,h:800" alt="Project 1" />
-        <img src="//img1.wsimg.com/isteam/stock/8211/:/rs=w:1300,h:800" alt="Project 2" />
-        <img src="//img1.wsimg.com/isteam/ip/3433f238-56bd-4c16-a7fc-2cf2112459e9/05518d20-3789-49cd-b243-53ae96edb043.jpg/:/rs=w:1300,h:800" alt="Project 3" />
-        <img src="//img1.wsimg.com/isteam/ip/3433f238-56bd-4c16-a7fc-2cf2112459e9/364aed23-3651-4290-8ddf-00b81fd1c901.jpg/:/rs=w:1300,h:800" alt="Project 4" />
-        <img src="//img1.wsimg.com/isteam/ip/3433f238-56bd-4c16-a7fc-2cf2112459e9/b0baab36-b40b-42ba-944e-358ffef53bff.jpg/:/rs=w:1300,h:800" alt="Project 5" />
+        <img src="https://placehold.co/600x400?text=Placeholder" alt="Project 1" />
+        <img src="https://placehold.co/600x400?text=Placeholder" alt="Project 2" />
+        <img src="https://placehold.co/600x400?text=Placeholder" alt="Project 3" />
       </div>
+
+      
     </section>
   </main>
 
