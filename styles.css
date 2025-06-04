@@ -64,7 +64,7 @@ body {
     font-family: 'Philosopher', sans-serif;
     background-color: #eeeeee;
     color: #2c2b2b;
-    padding: 1rem;
+    padding: 0;
     font-size: 1rem;
   }
 
@@ -244,6 +244,48 @@ body {
     width: 75vw;
     align-content: center;
 }
+
+.profile-container {
+  display: flex;
+  align-items: flex-start; /* Prevent sidebar from stretching to full height */
+}
+
+
+.profile-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background: #333;
+  min-width: 120px;
+  max-width: 200px;
+  flex: 0 1 15vw;
+  gap: 0.5rem;
+  height: auto;            /* Ensure it's auto-sizing */
+}
+
+
+.profile-list img {
+  width: 90%;              /* full width of the container */
+  aspect-ratio: 1 / 1;      /* ensures height = width for a square */
+  object-fit: cover;        /* crop the image to fit the square */
+  border-radius: 12px;      /* rounded corners */
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.2s;
+}
+
+
+.profile-list img:hover {
+  border: 2px solid #fff;
+}
+
+.profile-details {
+  flex: 1;
+  padding: 2rem;
+  background: #f4f4f4;
+}
+
   
   @media (max-width: 768px) {
     .top-bar {
