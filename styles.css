@@ -281,7 +281,7 @@ body {
   content: '\25B6'; /* right-pointing triangle */
   position: absolute;
   left: 0;
-  top: 0.6rem;
+  top: 0rem;
   font-size: 0.9rem;
   transition: transform 0.2s;
 }
@@ -351,7 +351,12 @@ body {
   background: #f4f4f4;
 }
 
-  
+.content-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+
   @media (max-width: 768px) {
     .top-bar {
       flex-direction: column;
@@ -377,10 +382,33 @@ body {
       }
       
   
-    .hero, .quick-links, .container {
-      padding: 1rem;
-    }
+  .hero, .quick-links, .container {
+    padding: 1rem;
+  }
 
+  /* Make profile images horizontal on small screens */
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-list {
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    justify-content: center;
+    overflow-x: auto;
+  }
+
+  .profile-list img {
+    width: 18vw;
+    max-width: 80px;
+  }
+
+  .content-section {
+    width: 100%;
+  }
 
 
   }
