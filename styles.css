@@ -399,6 +399,7 @@ body {
     min-width: 0;
     justify-content: center;
     overflow-x: auto;
+    overflow-y: hidden;
   }
 
   .profile-list img {
